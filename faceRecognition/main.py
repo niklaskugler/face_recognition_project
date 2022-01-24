@@ -18,6 +18,7 @@ def userFeedback_sound(counter, name):
         counter = counter-1
     else: 
         counter = 0
+    return counter
 
 def main(): 
     # Codiere Gesichter aus Samples aus Ordner images
@@ -50,7 +51,7 @@ def main():
             ## Sound Acceess to the shuttle
             # offene todos erweitern das sysetme
             # print(counter name)
-            userFeedback_sound(counter, name)
+            counter = userFeedback_sound(counter, name)
 
         cv2.imshow("Frame", frame)
 
